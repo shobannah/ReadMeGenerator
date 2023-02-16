@@ -1,8 +1,8 @@
-[![Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-#📖 
+#📖 ReadMe Generator
 ### 💡 Description
-
+Enter description here
 ###Table of Contents
 * [Installation](#installation) 
 * [Usage](#usage)
@@ -12,20 +12,20 @@
 * [Questions](#questions)
 
 ###Installation
-
+Enter Installation instructions here
 ###Usage
-
+Enter Usage here
 ###License
- is covered under the [![Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) license.
+ReadMe Generator is covered under the [![GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) license.
 ###Contributing
-
+Enter contribution here
 ###Tests
-
+Enter testing here
 ###Questions
-Github Username: 
-Please find my profile here: [Github Profile]() 
+Github Username: Enter github username here
+Please find my profile here: [Github Profile](Enter github url here) 
 
-Please email me at  with any additional questions.
+Please email me at Enter email address here with any additional questions.
 
 
 ---

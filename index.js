@@ -3,38 +3,41 @@
 // TODO: Create an array of questions for user input
 const inquirer = require('inquirer');
 const fs = require('fs');
-const apache = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-const gnu = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-const mit = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+let apache = "[![Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+let gnu = "[![GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+let mit = "[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 
-const generateREADME = ({ title, description, installation, usage, license, contributing, tests, questions }) =>
+const generateREADME = ({ title, description, installation, usage, questions, license, contributing, tests, email, ghusername, ghurl }) =>
 
-`#📖 ${title}
+`${license}
+
+#📖 ${title}
 ### 💡 Description
 ${description}
 ###Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* [Installation](#installation) 
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
 ###Installation
 ${installation}
 ###Usage
 ${usage}
-###🏆 License
-${title} is licensed under the ${license}.
+###License
+${title} is covered under the ${license} license.
 ###Contributing
 ${contributing}
 ###Tests
 ${tests}
-###💭 Questions
-${questions}
+###Questions
+Github Username: ${questions}
+Please find my profile here: [Github Profile](${ghurl}) 
 
+Please email me at ${email} with any additional questions.
 
-
-Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
 Copyright Ⓒ 2023, Shobannah Ally `
@@ -66,10 +69,10 @@ inquirer
         type: 'list',
         name: 'license',
         message: "Choose a license",
-        choices: ['Apache License v2.0' ,'GNU General Public License v3.0' ,'MIT License']
+        choices: [apache, gnu, mit]
         }, 
         {
-        type: 'input',
+        type: 'input',          
         name: 'contributing',
         message: "What has contributed to your project?",
         },
@@ -77,6 +80,21 @@ inquirer
         type: 'input',
         name: 'tests',
         message: "What are your testing instructions?",
+        },
+        {
+        type: 'input',
+        name: 'questions',
+        message: "What is your github username?",
+        },
+        {
+        type: 'input',
+        name: 'ghurl',
+        message: "Please enter the url to your githin profile:",
+        },
+        {
+        type: 'input',
+        name: 'email',
+        message: "What is your email address?",
         },
     
     ])

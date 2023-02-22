@@ -11,10 +11,13 @@ const generateREADME = ({ title, description, installation, usage, questions, li
 
 `${license}
 
-#📖 ${title}
+#  ${title}
 ### 💡 Description
+
 ${description}
-###Table of Contents
+
+
+### Table of Contents
 * [Installation](#installation) 
 * [Usage](#usage)
 * [License](#license)
@@ -22,19 +25,19 @@ ${description}
 * [Tests](#tests)
 * [Questions](#questions)
 
-###Installation
+### Installation
 ${installation}
-###Usage
+### Usage
 ${usage}
-###License
+### License
 ${title} is covered under the ${license} license.
-###Contributing
+### Contributing
 ${contributing}
-###Tests
+### Tests
 ${tests}
-###Questions
+### Questions
 Github Username: ${questions}
-Please find my profile here: [Github Profile](${ghurl}) 
+Please find my profile here: [${questions}](${ghurl}) 
 
 Please email me at ${email} with any additional questions.
 
